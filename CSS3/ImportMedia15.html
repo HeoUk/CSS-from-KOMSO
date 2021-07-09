@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>ImportMedia15.html</title>
+    <!--<link href="Styles/import.css" rel="stylesheet"/>-->
+    <style>
+      /* 
+           import규칙을 이용한 외부 css파일 적용
+           반드시 style태그 안에
+           반드시 style태그 최상단에 위치(안그러면 적용이 안된다)
+        */
+        @import url(Styles/import.css);
+         
+        .content{
+            color:yellow;
+            background-color: black;
+        }
+        /*media 규칙은 위치에 상관없음*/
+        @media screen{
+             .content{
+                 color:white;
+             }
+         }
+         @media print{
+            .content{
+                 color:black;
+                 background-color: white;
+             }
+         }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+        <p>
+            지난 14일 방송된 KBS 2TV 새 수목드라마 ‘대박부동산’ 1회는 닐슨코리아 기준 전국 시청률 1부 4.1% 2부 5.3%를 기록, 첫 방송부터 동시간대 1위에 등극하며 산뜻한 출발을 알렸다. 황금 매물 같은 드라마의 초석을 다지며 시청자들의 마음을 사로잡았다.
+        </p>
+    </div>
+</body>
+</html>
